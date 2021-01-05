@@ -1,0 +1,31 @@
+/* 
+****Browser Reset
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Roboto',sans-serif;
+}
+
+/* Navigation start */
+.navigation{
+    text-align: right;
+}
+.navigation__list{
+    list-style: none;
+}
+.navigation__item{
+    display: inline-block;
+    margin: 15px;
+}
+.navigation__link{
+    padding: 5px 10px; 
+    text-decoration: none;
+    color: #3c3c3c;
+}
+/* Navigation End */
