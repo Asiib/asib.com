@@ -1,4 +1,16 @@
 /* 
+****Define CSS Custom Property
+*/
+:root{
+    --color-navigation-text: #3c3c3c;
+    --color-paragraph-dark: #3e3e3e;
+    --color-paragraph-light: #6c6c6c;
+    --color-text-highlight: #FF8367;
+    --color-primary-heading: #363958;
+    --bgcolor-work: #e5e5e5;
+}
+
+/* 
 ****Browser Reset
 */
 *{
@@ -7,14 +19,20 @@
     box-sizing: border-box;
 }
 body{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     font-family: 'Roboto',sans-serif;
+}
+h1,
+h2{
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
 }
 
 /* Navigation start */
 .navigation{
     text-align: right;
+    margin: 20px 0px 40px 0px;
 }
 .navigation__list{
     list-style: none;
@@ -26,6 +44,94 @@ body{
 .navigation__link{
     padding: 5px 10px; 
     text-decoration: none;
-    color: #3c3c3c;
+    color: var(--navigataion-text-color);
 }
 /* Navigation End */
+
+/* About Section Start */
+.col-1-of-2{
+    width: 50%;
+    height: 300px;
+    float: left;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.heading-primary__first,
+.heading-primary__second{
+    display: block;
+    font-size: 60px;
+}
+.heading-text-dark{
+    color: var(--color-primary-heading);
+}
+.heading-text-highlight{
+    color: var(--color-text-highlight);
+}
+.person-image-box1{
+    text-align: center;
+}
+.person__image{
+    height: 100%;
+}
+.heading-secondary{
+    font-size: 48px;
+    color: var(--color-primary-heading);
+}
+.description{
+    margin-bottom: 20px;
+}
+.button{
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(to top,#FF8063,#F46060);
+    color: #fff;
+    border-radius: 5px;
+}
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+/* About Section End */
+
+/* Work Section Start */
+.work{
+    background-color: var(--bgcolor-work);
+    height: 550px;
+}
+.work-heading{
+    padding: 60px 0;
+    text-align: center;
+}
+.work-showcase{
+ 
+}
+.demo-work{
+    width: 25%;
+    height: 350px;
+    background-color: #fff;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+    margin: 0px 40px;
+
+}
+.demo-work::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.demo-work:last-child{
+    margin-right: 0;
+}
+.demo-work>img{
+    width: 100%;
+}
+.demo-work>h3,
+.demo-work>p{
+    margin: 10px 0;
+    padding: 0 20px;
+}
+/* Work Section End */
